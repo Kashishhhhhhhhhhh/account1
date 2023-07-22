@@ -1,0 +1,759 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* Banner */
+.banner {
+  background: url(./assets/image/landing.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 135px 66px;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  background-size: cover;
+}
+
+.bannerLeft {
+  color: white;
+  width: 50%;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.bannerHeading{
+    font-size: 37px;
+}
+.bannerSubHeading{
+    font-size: 28px;
+
+}
+.bannerRight {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: flex-end;
+  align-items: flex-end;
+}
+.bannerLeftsection{
+    display: flex;
+    gap: 20px;
+}
+.bannerLeftsection1, .bannerLeftsection2 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+.bannerLeftsectionText{
+    font-size: 18px;
+    font-weight: 600;
+    font-family: sans-serif;
+
+}
+.bannerLeftsectionText2{
+    font-size: 22px;
+    font-weight: 600;
+}
+.formArea {
+  background-color: #263d5a;
+  padding: 20px;
+  width: 50%;
+  height: 80%;
+}
+select#program {
+  width: 100%;
+  display: block;
+  border-radius: 7px;
+  padding: 10px 5px;
+}
+form input {
+  width: 100%;
+  padding: 7px 7px;
+  border-radius: 7px;
+  border: 1px solid #263d5a;
+}
+form label {
+  display: inline-block;
+  color: #fff;
+  margin-top: 11px;
+  margin-bottom: 3px;
+}
+/* Banner End */
+
+/* Highlight */
+.highlightpoint{
+    background-color: #202D66;
+    color: white;
+    font-weight: 600;
+    display: flex;
+    padding: 39px 70px;
+    
+}
+.highlightpoint li {
+  font-size: 16px;
+  line-height: 35px;
+}
+.rightHiglight{
+width: 50%;
+}
+.leftHiglight{
+    width: 50%;
+}
+.highlightpointList{
+list-style: none;
+font-weight: 400;
+}
+.highlightpointList li:before {
+    content: "\2192"; /* Unicode character for a right arrow (→) */
+    margin-right: 10px;
+  }
+
+/* Highlight End*/
+
+/* Placement */
+.placement{
+padding: 39px 70px;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+gap: 20px;
+}
+.placement h1, .recruiter h1, .power h1 , .instruction h1 , .academic h1 , .cardSlider h1{
+    font-family: "Poppins", Sans-serif;
+    font-size: 50px;
+    font-weight: 600;
+    text-align: center;
+    position: relative;
+}
+.placement h1::after, .recruiter h1::after, .cardSlider h1:after, .power h1:after , .instruction h1:after , .academic h1:after   {
+    content: "";
+    position: absolute;
+    bottom: -4px; /* Adjust the distance from the text (change the value as needed) */
+    left: 40%;
+    height: 3px; /* Adjust the height of the underline (change the value as needed) */
+    width: 20%;
+    background-color: blue; /* Change the color as needed */
+  }
+.placementNumber{
+    display: flex;
+    gap: 40px;
+}
+.placementSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1px;
+}
+.counter{
+    font-size: 58px;
+    font-weight: 700;
+    background-image: linear-gradient(45deg, #d51097 0%, #440fcb 100%); /* Define your gradient colors here */
+    background-clip: text;
+    -webkit-background-clip: text; /* For Safari/WebKit browsers */
+    color: transparent;
+
+}
+.counterText{
+    background-image: linear-gradient(45deg, #d51097 0%, #440fcb 100%); /* Define your gradient colors here */
+    background-clip: text;
+    -webkit-background-clip: text; /* For Safari/WebKit browsers */
+    color: transparent;
+}
+.termsCondition{
+    font-size: 14px;
+    font-weight: 300;
+}
+/* Placement End */
+
+/* Recruiter */
+
+/* Recruiter End*/
+
+
+/* Merit Scholarship */
+.meritscholarship{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px;
+    background-image: url(./assets/image/landing-page-banner.png);
+    background-position: top;
+
+}
+.meritscholarship h1{
+    color: white;
+}
+
+/* Merit Scholarship End */
+
+/* Power Of Gyan Vihar */
+.power{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px;
+    gap: 30px;
+}
+.powerBoxColumn{
+    width: 90%;
+    display: flex;
+    column-gap: 20px;
+
+}
+.boxMessage{
+    background-color: #f0f0f0;
+    height:340px;
+    width: 33%;
+    border: 1px solid E8E8E8;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.boxImage{
+    height: 340px;
+    width: 33%;
+   border: 1px solid #E8E8E8;
+   border-radius: 10px;
+    object-fit: contain;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+}
+
+.boxImage img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+.svgArrow{
+    width: 8%;
+}
+.boxMessageText{
+width: 80%;
+font-weight: 500;
+font-size: 15px;
+}
+/* Power Of Gyan Vihar End */
+
+
+
+/* Instruction */
+.instruction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 170px;
+}
+.instructionBox{
+    display: flex;
+}
+/* Instruction End */
+
+/* academic Excellence */
+.academicText{
+    font-size: 18px;
+    font-weight: 600;
+}
+.instructionBoxLeft , .instructionBoxRight{
+    font-size: 18px;
+
+}
+.instructionBoxLeft {
+  text-align: justify;
+  padding-right: 26px;
+  width: 50%;
+}
+.instructionBoxRight {
+  text-align: justify;
+  padding-left: 16px;
+  width: 50%;
+}
+.instructionBox li {
+  font-size: 17px;
+  line-height: 32px;
+}
+.instructionBox li::marker {
+  font-size: 13px;
+  font-weight: 800;
+  margin: 8px 10px !important;
+  padding: 10px !important;
+}
+
+.academic {
+  margin-top: 40px;
+}
+.academicSubheading {
+  font-size: 20px;
+  text-align: center;
+  font-weight: 600;
+  margin-top: 32px !important;
+  width: 61%;
+  margin: 0 auto;
+}
+
+.mentor {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  padding: 45px 0;
+}
+
+.leftMentor{
+    width: 30%;
+    font-weight: 600;
+    font-size: 30px;
+}
+.rightMentor {
+  width: 44%;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.rightMentor img{
+    width: 300px;
+}
+
+
+
+/* Testimonial 1 */
+
+
+/* Styles for the testimonial slider container */
+.testimonial-slider {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* Styles for each testimonial */
+  .testimonial {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 100%;
+  }
+  
+  /* Styles for the profile section */
+  .profile {
+    flex: 0 0 40%;
+    max-width: 40%;
+    text-align: center;
+  }
+  
+  .profile img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+  
+  /* Styles for the quote section */
+  .quote {
+    flex: 0 0 55%;
+    max-width: 55%;
+    text-align: justify;
+  }
+  .testimonialBox{
+    display: flex;
+  }
+  
+
+
+  /* Card Slide */
+  .slide-container{
+    max-width: 1120px;
+    width: 100%;
+    padding: 40px 0;
+  }
+  .slide-content{
+    margin: 0 40px;
+    overflow: hidden;
+    border-radius: 25px;
+  }
+  .card{
+    border-radius: 25px;
+    background-color: #FFF;
+    border: 1px solid white !important;
+  }
+  .image-content,
+  .card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 14px;
+  }
+  .image-content{
+    position: relative;
+    row-gap: 5px;
+    padding: 25px 0;
+  }
+  .overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 25px 25px 0 25px;
+  }
+  /* .overlay::before,
+  .overlay::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    height: 40px;
+    width: 40px;
+    background-color: #4070F4;
+  }
+  .overlay::after{
+    border-radius: 0 25px 0 0;
+    background-color: #FFF;
+  } */
+  .card-image{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background: #FFF;
+    padding: 3px;
+  }
+  .card-image .card-img{
+    height: 90%;
+    width: 90%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #fff;
+  }
+  .name{
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+  }
+  .description {
+    font-size: 14px;
+    color: #707070;
+    text-align: justify;
+}
+  .button{
+    border: none;
+    font-size: 16px;
+    color: #FFF;
+    padding: 8px 16px;
+    background-color: #4070F4;
+    border-radius: 6px;
+    margin: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  .button:hover{
+    background: #265DF2;
+  }
+  .swiper-navBtn{
+    color: #6E93f7;
+    transition: color 0.3s ease;
+  }
+  .swiper-navBtn:hover{
+    color: #4070F4;
+  }
+  .swiper-navBtn::before,
+  .swiper-navBtn::after{
+    font-size: 35px;
+  }
+  .swiper-button-next{
+    right: 0;
+  }
+  .swiper-button-prev{
+    left: 0;
+  }
+  .swiper-pagination-bullet{
+    background-color: white;
+    opacity: 1;
+  }
+  .swiper-pagination-bullet-active{
+    background-color: white;
+  }
+  @media screen and (max-width: 768px) {
+    .slide-content{
+      margin: 0 10px;
+    }
+    .swiper-navBtn{
+      display: none;
+    }
+  }
+  /* Card Slide End */
+  .cardbox{
+    display: flex;
+  }
+
+  /* Card Slider */
+
+  .cardSlider {
+    padding: 58px 30px;
+    background-color: #F8F8F8;
+}
+
+  .recruiter {
+    margin-bottom: 40px;
+    margin-top: 50px;
+}
+.slide-container.swiper {
+  padding-top: 60px;
+}
+
+.carousel-wrap {
+  margin: 90px auto;
+  padding: 0 5%;
+  width: 80%;
+  position: relative;
+}
+
+/* fix blank or flashing items on carousel */
+.owl-carousel .item {
+  position: relative;
+  z-index: 100; 
+  -webkit-backface-visibility: hidden; 
+}
+
+/* end fix */
+.owl-nav > div {
+  margin-top: -26px;
+  position: absolute;
+  top: 50%;
+  color: #cdcbcd;
+}
+
+.owl-nav i {
+  font-size: 52px;
+}
+
+.owl-nav .owl-prev {
+  left: -30px;
+}
+
+.owl-nav .owl-next {
+  right: -30px;
+}
+
+@media only screen and (min-width: 375px) and (max-width: 767px) {
+  .banner {
+    display: flex;
+    flex-direction: column;
+    padding: 25px 48px;
+}
+.bannerLeft {
+  width: 100%;
+}
+.bannerLeft img {
+  width: 100%;
+}
+.bannerRight {
+  width: 100%;
+}
+.formArea {
+  width: 100%;
+}
+.highlightpoint {
+  flex-direction: column;
+  padding: 39px 15px;
+}
+.rightHiglight {
+  width: 100%;
+}
+.leftHiglight {
+  width: 100%;
+}
+.placementNumber {
+  flex-direction: column;
+}
+.boxMessage {
+  width: 100%;
+}
+.powerBoxColumn {
+  width: 100%;
+  flex-direction: column;
+}
+.boxImage {
+  height: auto;
+  width: 100%;
+}
+.power {
+  padding: 25px;
+}
+.boxMessageText {
+  width: 82%;
+  text-align: justify;
+}
+.instruction {
+  padding: 10px 17px;
+}
+.placement h1, .recruiter h1, .power h1, .instruction h1, .academic h1, .cardSlider h1 {
+  font-size: 34px;
+}
+.instructionBox {
+  display: flex;
+  flex-direction: column;
+}
+.instructionBoxLeft {
+  width: 100%;
+}
+.instructionBoxRight {
+  width: 100%;
+}
+.instructionBoxRight {
+  padding-right: 24px;
+  padding-left: 0px;
+}
+.academicSubheading {
+  width: 92%;
+}
+.mentor {
+  flex-direction: column;
+}
+.leftMentor {
+  width: 83%;
+}
+.cardbox {
+  flex-direction: column;
+}
+.swiper-button-prev, .swiper-rtl .swiper-button-next {
+  display: none !important;
+}
+.swiper-button-next, .swiper-rtl .swiper-button-prev {
+  display: none !important;
+}
+}
+
+
+@media only screen and (max-device-width: 480px) {
+  .banner {
+    display: flex;
+    flex-direction: column;
+    padding: 25px 48px;
+}
+.bannerLeft {
+  width: 100%;
+}
+.bannerLeft img {
+  width: 100%;
+}
+.bannerRight {
+  width: 100%;
+}
+.formArea {
+  width: 100%;
+}
+.highlightpoint {
+  flex-direction: column;
+  padding: 39px 15px;
+}
+.rightHiglight {
+  width: 100%;
+}
+.leftHiglight {
+  width: 100%;
+}
+.placementNumber {
+  flex-direction: column;
+}
+.boxMessage {
+  width: 100%;
+}
+.powerBoxColumn {
+  width: 100%;
+  flex-direction: column;
+}
+.boxImage {
+  height: auto;
+  width: 100%;
+}
+.power {
+  padding: 25px;
+}
+.boxMessageText {
+  width: 82%;
+  text-align: justify;
+}
+.instruction {
+  padding: 10px 17px;
+}
+.placement h1, .recruiter h1, .power h1, .instruction h1, .academic h1, .cardSlider h1 {
+  font-size: 34px;
+}
+.instructionBox {
+  display: flex;
+  flex-direction: column;
+}
+.instructionBoxLeft {
+  width: 100%;
+}
+.instructionBoxRight {
+  width: 100%;
+}
+.instructionBoxRight {
+  padding-right: 24px;
+  padding-left: 0px;
+}
+.academicSubheading {
+  width: 92%;
+}
+.mentor {
+  flex-direction: column;
+}
+.leftMentor {
+  width: 83%;
+}
+.cardbox {
+  flex-direction: column;
+}
+.swiper-button-prev, .swiper-rtl .swiper-button-next {
+  display: none !important;
+}
+.swiper-button-next, .swiper-rtl .swiper-button-prev {
+  display: none !important;
+}
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1){
+  .counter {
+    font-size: 40px;
+}
+.formArea {
+  width: 87%;
+  height: 89%;
+}
+.bannerHeading {
+  font-size: 28px;
+
+}
+.bannerSubHeading {
+  font-size: 25px;
+}
+.boxMessageText {
+  font-size: 11px;
+}
+.instruction {
+  padding: 10px 45px;
+}
+}
